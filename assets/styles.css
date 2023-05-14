@@ -12,8 +12,6 @@
   --nav-bg: #29235c;
   --text-gray: #adb9c7;
   --text-white: #f3f4f6;
-  --fire: #ff6d00;
-  --electric: #64d3ff;
 }
 
 * {
@@ -276,7 +274,10 @@ main {
 #servicios-info h2 {
   font-size: 32px;
   font-weight: 800;
+  margin-bottom: -40px;
 }
+
+
 
 .servicios-info-cards-container {
   display: flex;
@@ -311,4 +312,88 @@ main {
   font-size: 14px;
   font-weight: 300;
   color: var(--text-gray);
+}
+
+
+
+
+/* Informacion de contacto */
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #02050e;
+}
+
+
+.contacto__hdos {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-left: 50px;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: none;
+  padding-bottom: 50px;
+}
+
+
+
+.contacto__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000110;
+  padding-bottom: 20px;
+}
+
+
+.footer-hcuatro {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  color: #e9eeff;
+}
+
+
+
+
+/* Redes Sociales */
+
+
+.contacto__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 15%;
+  text-decoration: none;
+  color: #000110;
+  font-weight: 550;
+}
+
+.contacto__redes-a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contacto-redes {
+  padding-top: 30px;
+}
+.contacto-redes a {
+  padding-top: 5px;
+  margin: 5px;
+
+}
+
+
+
+
+.contacto-imagen {
+  width: 300px;
+  height: 400px;
 }
