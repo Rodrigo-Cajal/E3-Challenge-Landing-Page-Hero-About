@@ -344,6 +344,11 @@ footer {
   align-items: center;
   color: #000110;
   padding-bottom: 20px;
+  background-color: #272d37;
+  border-radius: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 50px;
 }
 
 
