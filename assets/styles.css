@@ -37,8 +37,8 @@ header {
 }
 
 .logo {
-  width: 70px;
-  height: 110px;
+  width: 85px;
+  height: 85px;
 }
 
 .navbar,
@@ -86,11 +86,11 @@ main {
 }
 
 #hk {
-  margin-top: 65px;
+  margin: 150px 0 50px 0;
   padding: 70px 0;
   max-width: 1200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -140,6 +140,12 @@ main {
   gap: 20px;
 }
 
+.hk-card img {
+  
+  border-radius: 10px;
+}
+
+
 .hk-card-info {
   display: flex;
   flex-direction: column;
@@ -185,106 +191,38 @@ main {
   width: 40px;
 }
 
-#info {
-  padding: 70px 0;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 80px;
-}
-
-#info h2 {
-  font-size: 32px;
-  font-weight: 800;
-}
-
-#nosotros-info {
-  padding: 70px 0;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 80px;
-}
-
-#nosotros-info h2 {
-  font-size: 32px;
-  font-weight: 800;
-}
-
-.info-cards-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.info-card {
-  width: 300px;
-  height: 290px;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: var(--secondary);
-  border-radius: 10px;
-  gap: 20px;
-}
-
-.info-card img {
-  width: 50px;
-}
-
-.info-card h3 {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.info-card p {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--text-gray);
-}
-
-.sobre-nosotros {
-  width: 90%;
-  background: var(--secondary);
-  padding: 20px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
 
 #servicios-info {
-  padding: 70px 0;
   max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 80px;
+  margin: 50px 0 50px 0;
+  padding-top: 100px;
 }
 
-#servicios-info h2 {
+.servicios-info-h2 {
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: -40px;
+  margin-bottom: -50px;
+  text-align: left;
 }
 
+
+.servicios-info-p {
+  padding: 0 60px 0 60px;
+  align-items: start;
+}
 
 
 .servicios-info-cards-container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: self-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 95px;
 }
 .servicios-info-card {
   width: 300px;
@@ -292,7 +230,7 @@ main {
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   text-align: center;
   background: var(--secondary);
   border-radius: 10px;
@@ -312,6 +250,8 @@ main {
   font-size: 14px;
   font-weight: 300;
   color: var(--text-gray);
+  align-items: start;
+  text-align: left;
 }
 
 
@@ -319,8 +259,7 @@ main {
 
 /* Informacion de contacto */
 footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 50px 0 100px 0;
   background-color: #02050e;
 }
 
@@ -334,6 +273,7 @@ footer {
   font-weight: 800;
   text-transform: none;
   padding-bottom: 50px;
+  padding-top: 150px;
 }
 
 
@@ -349,14 +289,17 @@ footer {
   margin-left: 400px;
   margin-right: 400px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
 .footer-hcuatro {
   display: flex;
   justify-content: center;
-  padding-left: 30px;
+  font-weight: 300;
+  font-size: 25px;
   color: #e9eeff;
+  padding-bottom: 20px;
 }
 
 
@@ -379,26 +322,16 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 30px;
+  padding: 20px 0px 20px 0px;
   border-radius: 15%;
   text-decoration: none;
   color: #fff;
-  font-weight: 300;
-}
-
-.contacto-redes {
-  padding-top: 30px;
-}
-.contacto-redes a {
-  padding-top: 5px;
-  margin: 5px;
-
+  font-weight: 600;
 }
 
 
 
-
-.contacto-imagen {
-  width: 300px;
-  height: 400px;
+.contacto__redes-a font {
+  padding: 10px;
 }
+
