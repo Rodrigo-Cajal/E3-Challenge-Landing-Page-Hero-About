@@ -88,7 +88,7 @@ main {
 #hk {
   margin: 150px 0 50px 0;
   padding: 70px 0;
-  max-width: 1200px;
+  max-width: 1250px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -193,7 +193,7 @@ main {
 
 
 #servicios-info {
-  max-width: 1200px;
+  max-width: 1250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,8 +254,211 @@ main {
   text-align: left;
 }
 
+.trabajos-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: -50px;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
 
 
+
+#trabajos {
+  position: relative;
+  max-width: 1250px; /* Ajusta el max-width según sea necesario */
+  margin: 0 auto;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.trabajos-container {
+  position: relative;
+}
+
+.trabajos-slider {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease;
+}
+
+.trabajos-slider > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.trabajo-card {
+  width: 300px; /* Ancho de cada card */
+  height: 300px; /* Altura de cada card */
+  margin-right: 10px; /* Gap entre las imágenes */
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.trabajo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+
+  .trabajo-info {
+    color: white;
+    text-align: center;
+  }
+
+
+  .trabajo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+    opacity: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    transition: opacity 0.3s ease;
+  }
+
+.trabajo-card:hover .trabajo-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio-card:hover .trabajo-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  background: #272d37;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.trabajos-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.trabajos-slider {
+  display: flex;
+  flex-direction: row;
+  width: calc(300px * 4 + 10px * 3); /* Ajuste el ancho total visible */
+  transition: transform 0.5s ease;
+}
+
+
+
+
+
+
+#portfolio {
+  position: relative;
+  max-width: 1250px; /* Ajusta el max-width según sea necesario */
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.portfolio-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-slider > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-card {
+  width: 300px; /* Ancho de cada card */
+  height: 300px; /* Altura de cada card */
+  margin-right: 10px; /* Gap entre las imágenes */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.portfolio-info {
+  color: white;
+    text-align: center;
+}
+
+.portfolio-card:hover .portfolio-info {
+  opacity: 1;
+}
+
+
+  .nav-btn-portfolio {
+    position: absolute;
+  top: 50%;
+  background: #272d37;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 100;
+  }
+  
+  #prev-portfolio {
+    left: 0px; /* Ajusta según sea necesario */
+  }
+  
+  #next-portfolio {
+    right: 0px; /* Ajusta según sea necesario */
+  }
+  
+
+.portfolio-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-slider {
+  display: flex;
+  flex-direction: row;
+  width: calc(300px * 4 + 10px * 3); /* Ajuste el ancho total visible */
+  transition: transform 0.5s ease;
+}
 
 /* Informacion de contacto */
 footer {
@@ -283,13 +486,12 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   color: #000110;
-  padding-bottom: 20px;
   background-color: #272d37;
   border-radius: 10px;
-  margin-left: 400px;
-  margin-right: 400px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+  padding: 50px;
+  
 }
 
 
